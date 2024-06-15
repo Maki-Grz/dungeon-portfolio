@@ -1,0 +1,40 @@
+
+:root {
+  --dungeon-kit-primary-green: #3c8527;
+  --dungeon-kit-second-green: #2a641c;
+
+  --dungeon-kit-primary-white: #EFEFEF;
+  --dungeon-kit-second-white: #D9D9D9;
+  --dungeon-kit-border-white: #aaaaaa3f;
+
+  --dungeon-kit-black: #303030;
+  --dungeon-kit-white: #FFFFFF;
+  --dungeon-kit-gray: #717171;
+}
+
+$PRIMARY_ORANGE: var(--dungeon-kit-primary-green);
+$SECOND_ORANGE: var(--dungeon-kit-second-green);
+
+$PRIMARY_WHITE: var(--dungeon-kit-primary-white);
+$SECOND_WHITE: var(--dungeon-kit-second-white);
+$BORDER_WHITE: var(--dungeon-kit-border-white);
+
+$BLACK: var(--dungeon-kit-black);
+$WHITE: var(--dungeon-kit-white);
+$GRAY: var(--dungeon-kit-gray);
+$RED: #FF2020;
+$PINK: #E8465D;
+$SALMON: #D94F4F;
+$FUSHIA: #F6479F;
+
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        --dungeon-kit-primary-white: #383838;
+        --dungeon-kit-second-white: #212121;
+        --dungeon-kit-border-white: #aaaaaa3f;
+
+        --dungeon-kit-black: #FFFFFF;
+        --dungeon-kit-white: #303030;
+        --dungeon-kit-gray: #AAAAAA;
+    }
+}*/

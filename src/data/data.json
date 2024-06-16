@@ -1,0 +1,55 @@
+[
+  {
+    "name": "START COAST",
+    "img": "donjon.png",
+    "type": "STORY",
+    "map": "UNDERWORLD",
+    "img_context": "https://ghost.paladium-pvp.fr/content/images/2022/07/image-13.png",
+    "description_context": "Welcome there is the start of my adventure, dive into coding during pandemic (COVID-19), and engage with a supportive community. Their dream of joining Paladium’s team takes shape through learning and personal projects.",
+    "content": [
+      {
+        "title": "Discovering Paladium and Aspirations",
+        "description": "Back in 2015, I stumbled upon Paladium, a French Minecraft PVP server, while watching videos. Fuze III, the mastermind behind Paladium, became my inspiration, and I dreamed of joining his team someday."
+      },
+      {
+        "title": "Lockdown and My Dive into Coding",
+        "description": "During the 2020 lockdown, I was in 8th grade, and I received my first computer. That’s when I delved into the world of programming, starting with C and then exploring JavaScript using NodeJS to create Discord bots."
+      },
+      {
+        "title": "Learning and Personal Projects",
+        "description": "Over the years, I engaged with talented developers and former Paladium employees. I honed my skills in technologies like NuxtJS, Vue, Tailwind, and Electron. Simultaneously, I worked on personal projects, including my portfolio (built with NextJS and MongoDB) and Netanime (using React, MongoDB, and NodeJS)."
+      },
+      {
+        "title": "Community Engagement and Moderation",
+        "description": "I actively participate in the 'Paladium Dev' Discord server, where I caught the attention of the friendly developer community. Eventually, I earned the role of moderator... Next part toward Modded Marsh."
+      }
+    ],
+    "img_content": [
+      "https://ghost.paladium-pvp.fr/content/images/2023/09/Minia-trailer-V9.png",
+      "https://repository-images.githubusercontent.com/54995014/f8a350c6-6710-438f-97c4-ee691e8731e1"
+    ],
+    "links": [
+      "https://www.paladium-pvp.fr/"
+    ]
+  },
+  {
+    "name": "WASTING WOODS",
+    "img": "donjon.png",
+    "type": "ABOUT",
+    "map": "UNDERWORLD",
+    "img_context": "https://assets.xboxservices.com/assets/60/32/6032dddb-85c5-4f30-8475-ccbef3039acd.jpg?n=Minecraft_Sneaky-Slider-1084_Better-Than-Ever_1600x675.jpg",
+    "description_context": "Welcome there is the start of my adventure, dive into coding during pandemic (COVID-19), and engage with a supportive community. Their dream of joining Paladium’s team takes shape through learning and personal projects.",
+    "content": [
+      {
+        "title": "Discovering Paladium and Aspirations",
+        "description": "Back in 2015, I stumbled upon Paladium, a French Minecraft PVP server, while watching videos. Fuze III, the mastermind behind Paladium, became my inspiration, and I dreamed of joining his team someday."
+      }
+    ],
+    "img_content": [
+      "https://ghost.paladium-pvp.fr/content/images/2023/09/Minia-trailer-V9.png"
+    ],
+    "links": [
+      "https://www.paladium-pvp.fr/"
+    ]
+  }
+]

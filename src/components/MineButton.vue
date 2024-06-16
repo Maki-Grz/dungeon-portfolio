@@ -1,11 +1,15 @@
 <script setup lang="ts">
+import useSwitchMap from "~/composables/useSwitchMap";
+
 defineProps({
   text: String,
+  to_second_map: Boolean,
 })
 </script>
 
 <template>
-  <button>{{ text }}</button>
+  <button v-if="to_second_map" @click="useSwitchMap().switchMap">{{ text }}</button>
+  <button v-else>{{ text }}</button>
 </template>
 
 <style scoped lang="scss">

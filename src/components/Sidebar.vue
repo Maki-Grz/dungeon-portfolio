@@ -1,29 +1,50 @@
 <script setup lang="ts">
 import MineButton from "~/components/MineButton.vue";
 import useCoordinate from "~/composables/useCoordinate";
+import data from '~/data/data.json';
 
-const {sidebar, setSidebar} = useSidebar();
+const {sidebar, setSidebar}: any = useSidebar();
 const {setCoordinate} = useCoordinate();
+
+const mission: any = ref(null);
+mission.value = data.find((e: any) => e.title === sidebar.title);
+console.log(mission.value.title, sidebar.value.title);
+
 </script>
 
 <template>
   <Transition name="slide">
-    <div class="sidebar" v-if="sidebar">
+    <div class="sidebar" v-if="sidebar.showing">
       <div class="sidebar__header">
         <div class="sidebar__header-informations">
-          <NuxtImg src="/markers/donjon.png" alt="donjon"/>
-          <span>STORY</span>
-          <h1>START COAST</h1>
+          <NuxtImg :src="`/markers/${mission.img}`" alt="donjon"/>
+          <span>{{ mission.type }}</span>
+          <h1>{{ mission.name }}</h1>
         </div>
-        <button @click="() => { setSidebar(false); setCoordinate(-100, -100)}">CLOSE</button>
+        <button @click="() => { setSidebar(false, 'START COAST'); setCoordinate(-100, -100)}">CLOSE</button>
       </div>
       <div class="sidebar__body">
-        <p>Welcome to my portfolio! I'm a full stack web developer. Discover my awesome skills and projects showcased in an interactive map that draws inspiration from the
-          legendary
-          Minecraft Dungeon!</p>
+        <div class="sidebar__body-synopsis">
+          <NuxtImg :src="mission.img_context" alt="img_context"/>
+          <p>{{ mission.description_context }}</p>
+        </div>
+        <div class="sidebar__body-content" v-for="each in mission.content" :key="each.name">
+          <h2>{{ each.title }}</h2>
+          <p>{{ each.description }}</p>
+        </div>
+        <div class="sidebar__body-img">
+          <div class="sidebar__body-img-each" v-for="(each, i) in mission.img_content" :key="i">
+            <NuxtImg :src="each" alt="img__content"/>
+          </div>
+        </div>
+        <div class="sidebar__body-links">
+          <div class="sidebar__body-links-each" v-for="(each, i) in mission.links" :key="i">
+            <NuxtLink :to="each" external target="_blank">{{ each }}</NuxtLink>
+          </div>
+        </div>
       </div>
-      <div class="sidebar__footer">
-        <MineButton text="START MISSION"/>
+      <div v-if="mission.map !== 'UNDERWORLD'" class="sidebar__footer">
+        <MineButton text="START MISSION" :to_second_map="true"/>
       </div>
     </div>
   </Transition>
@@ -52,11 +73,12 @@ const {setCoordinate} = useCoordinate();
   left: 0;
   top: 0;
   padding: 1rem;
-  z-index: 99;
+  z-index: 98;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  filter: drop-shadow(6px 0px 0px rgba(23, 23, 23, 0.5));
 }
 
 .sidebar__header {
@@ -101,6 +123,78 @@ const {setCoordinate} = useCoordinate();
     margin: 0;
     font-size: 2.5rem;
     color: #FFFFFF;
+  }
+}
+
+.sidebar__body {
+  margin: 0.5rem 0;
+  overflow-x: scroll;
+
+  .sidebar__body-synopsis {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+
+    img {
+      width: 17rem;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+    }
+
+    p {
+      font-weight: 700;
+      color: #ffffff;
+      font-family: Arial, serif;
+      font-size: .9rem;
+      margin: 0;
+    }
+  }
+
+  .sidebar__body-content {
+    h2 {
+      color: #FFFFFF;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-weight: 700;
+      color: #ffffff;
+      font-family: Arial, serif;
+      font-size: .9rem;
+      margin: 0;
+    }
+  }
+
+  .sidebar__body-img {
+    margin-top: 1rem;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+
+    img {
+      height: 17rem;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .sidebar__body-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .sidebar__body-links-each {
+      margin: .5rem 0.5rem 0.25rem 0;
+
+      a {
+        padding: 0.25rem 0.25rem;
+        background: #303030;
+        color: #FFFFFF;
+        border-radius: 2px;
+      }
+    }
   }
 }
 

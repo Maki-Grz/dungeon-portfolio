@@ -3,25 +3,32 @@ import MineButton from "~/components/MineButton.vue";
 import useCoordinate from "~/composables/useCoordinate";
 import data from '~/data/data.json';
 
-const {sidebar, setSidebar}: any = useSidebar();
+const sidebar = useState('sidebar', () => ({showing: false, title: "START COAST"}));
 const {setCoordinate} = useCoordinate();
 
-const mission: any = ref(null);
-mission.value = data.find((e: any) => e.title === sidebar.title);
-console.log(mission.value.title, sidebar.value.title);
+const mission = ref<any>(null);
 
+watch(() => sidebar.value.title, (newTitle) => {
+  mission.value = data.find((e: any) => e.name === newTitle);
+}, {immediate: true});
+
+const closeSidebar = () => {
+  sidebar.value.showing = false;
+  sidebar.value.title = 'START COAST';
+  setCoordinate(-100, -100);
+};
 </script>
 
 <template>
   <Transition name="slide">
-    <div class="sidebar" v-if="sidebar.showing">
+    <div class="sidebar" v-if="sidebar.showing && mission">
       <div class="sidebar__header">
         <div class="sidebar__header-informations">
           <NuxtImg :src="`/markers/${mission.img}`" alt="donjon"/>
           <span>{{ mission.type }}</span>
           <h1>{{ mission.name }}</h1>
         </div>
-        <button @click="() => { setSidebar(false, 'START COAST'); setCoordinate(-100, -100)}">CLOSE</button>
+        <button @click="closeSidebar">CLOSE</button>
       </div>
       <div class="sidebar__body">
         <div class="sidebar__body-synopsis">

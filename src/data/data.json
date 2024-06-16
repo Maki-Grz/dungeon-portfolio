@@ -37,19 +37,37 @@
     "img": "donjon.png",
     "type": "ABOUT",
     "map": "UNDERWORLD",
-    "img_context": "https://assets.xboxservices.com/assets/60/32/6032dddb-85c5-4f30-8475-ccbef3039acd.jpg?n=Minecraft_Sneaky-Slider-1084_Better-Than-Ever_1600x675.jpg",
-    "description_context": "Welcome there is the start of my adventure, dive into coding during pandemic (COVID-19), and engage with a supportive community. Their dream of joining Paladium’s team takes shape through learning and personal projects.",
+    "img_context": "https://cdn-uploads.gameblog.fr/img/news/418221_640097726ba44.jpg",
+    "description_context": "Embark on my Minecraft odyssey. Texture packs, servers, and a love for 1.16 and 1.18 define my blocky adventure.",
     "content": [
       {
-        "title": "Discovering Paladium and Aspirations",
-        "description": "Back in 2015, I stumbled upon Paladium, a French Minecraft PVP server, while watching videos. Fuze III, the mastermind behind Paladium, became my inspiration, and I dreamed of joining his team someday."
+        "title": "Beginnings in Pocket Edition (2013)",
+        "description": "In the quaint realm of Minecraft, my journey began back in 2013. Armed with my trusty mobile device, I delved into the pixelated world of Pocket Edition. The blocky landscapes unfolded before me, and I was hooked."
+      },
+      {
+        "title": "Texture Packs and Creative Ventures",
+        "description": "As the sun set and rose countless times, I discovered the magic of texture packs. Armed with my creativity, I crafted custom textures that transformed mundane blocks into works of art. My virtual toolbox overflowed with vibrant hues and intricate patterns."
+      },
+      {
+        "title": "Building My Own Minecraft Universe (Server)",
+        "description": "But why stop at textures? I yearned to shape entire worlds. So, I donned my builder’s hat and set forth to create servers. These digital realms buzzed with life as players explored, battled, and built together. My heart swelled with pride as my creations flourished."
+      },
+      {
+        "title": "Redstone & Commands Blocks: My True Passion",
+        "description": "Yet, amidst the towering castles and sprawling cities, one thing captivated me above all: redstone. The intricate circuits, hidden doors, and automated farms fueled my fascination. I tinkered, experimented, and occasionally blew things up (oops!). Redstone became my muse, my playground of logic and creativity."
+      },
+      {
+        "title": "Versions Close to My Heart: 1.15, 1.16 and 1.18",
+        "description": "Ah, the sweet nostalgia of version updates! While each brought new wonders, two hold a special place in my heart—the enchanting Nether Update (1.16) and the awe-inspiring Caves & Cliffs Update (1.18). The crimson forests, ancient debris, and elusive axolotls—they’re etched into my Minecraft memories. Don't forget the bees update (1.15) !"
       }
     ],
     "img_content": [
-      "https://ghost.paladium-pvp.fr/content/images/2023/09/Minia-trailer-V9.png"
+      "https://blogs.windows.com/wp-content/uploads/prod/sites/2/2016/12/Minecraft-Pocket-Edition_Ender-Dragon-Key-Art.png",
+      "https://minecraft.fr/wp-content/uploads/2020/06/minecraft-1-16-mise-a-jour-nether.jpg",
+      "https://minecraft.fr/wp-content/uploads/2021/11/minecraft-1-18-art-officiel.jpg"
     ],
     "links": [
-      "https://www.paladium-pvp.fr/"
+      "https://www.minecraft.net/"
     ]
   }
 ]

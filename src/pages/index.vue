@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import useSidebar from "~/composables/useSidebar";
 import useCoordinate from "~/composables/useCoordinate";
 import useSwitchMap from "~/composables/useSwitchMap";
 
@@ -7,37 +6,38 @@ useHead({
   title: 'Maximilien Grzeczka - Dungeon Portfolio',
 })
 
-const {sidebar, setSidebar} = useSidebar();
+const sidebar = useState('sidebar', () => ({showing: false, title: "START COAST"}));
 const {coordinate} = useCoordinate();
 
 const map: any = ref(null);
 const width = ref(390);
 const height = ref(200);
 
-const bounds = computed(
-    () =>
-        [
-          [0, 0],
-          [height.value, width.value],
-        ] as L.LatLngBoundsLiteral
+const bounds = computed(() =>
+    [
+      [0, 0],
+      [height.value, width.value],
+    ] as L.LatLngBoundsLiteral
 );
 
 const mapInitialized = () => {
   const mapObject = map.value.leafletObject;
-}
-
+};
 
 async function markerOnClick(e: any, title: string) {
   coordinate.value.longitude = e.latlng.lng + 1.8;
   coordinate.value.latitude = e.latlng.lat + 15;
 
-  if (sidebar.value) {
-    setSidebar(false, title)
-    return setTimeout((e: any) => {
-      return setSidebar(true, title)
-    }, 700)
+  if (sidebar.value.showing) {
+    sidebar.value.showing = false;
+    sidebar.value.title = title;
+    setTimeout(() => {
+      sidebar.value.showing = true;
+    }, 700);
+  } else {
+    sidebar.value.showing = true;
+    sidebar.value.title = title;
   }
-  return setSidebar(true, title);
 }
 </script>
 

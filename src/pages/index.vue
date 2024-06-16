@@ -1,15 +1,17 @@
 <script setup lang="ts">
+import useSidebar from "~/composables/useSidebar";
+import useCoordinate from "~/composables/useCoordinate";
 
 useHead({
   title: 'Maximilien Grzeczka - Dungeon Portfolio',
 })
 
+const {sidebar, setSidebar} = useSidebar();
+const {coordinate, setCoordinate} = useCoordinate();
+
 const map: any = ref(null);
 const width = ref(390);
 const height = ref(200);
-
-const lat: Ref<number> = ref(0);
-const lon: Ref<number> = ref(0);
 
 const bounds = computed(
     () =>
@@ -25,14 +27,22 @@ const mapInitialized = () => {
 
 
 async function markerOnClick(e: any) {
-  lon.value = e.latlng.lng + 1.8;
-  lat.value = e.latlng.lat + 15;
+  coordinate.value.longitude = e.latlng.lng + 1.8;
+  coordinate.value.latitude = e.latlng.lat + 15;
+
+  if (sidebar.value) {
+    setSidebar(false)
+    return setTimeout((e: any) => {
+      return setSidebar(true)
+    }, 700)
+  }
+  return setSidebar(true);
 }
 </script>
 
 <template>
   <div style="height:100vh; width:100vw">
-    <LMap style="background-color: #e7d6c2;" v-if="true"
+    <LMap style="background-color: #e7d6c2; z-index: 4" v-if="true"
           ref="map"
           :zoom="0"
           :max-zoom="3"
@@ -47,7 +57,7 @@ async function markerOnClick(e: any) {
 
       <LImageOverlay url="/maps/map.jpg" :bounds="bounds"/>
 
-      <LMarker :lat-lng="[lat, lon]">
+      <LMarker :lat-lng="[coordinate.latitude, coordinate.longitude]">
         <LIcon icon-url="/markers/YOU ARE HERE.png" :icon-size="[755/7, 272/7]"/>
       </LMarker>
 
@@ -95,7 +105,7 @@ async function markerOnClick(e: any) {
         <LIcon icon-url="/markers/COMING SOON.png" :icon-size="[950/8, 482/8]"/>
       </LMarker>
     </LMap>
-    <LMap style="background-color: #ffffff;" v-else
+    <LMap style="background-color: #ffffff; z-index: 4" v-else
           ref="map2"
           :zoom="0"
           :max-zoom="3"
@@ -110,7 +120,7 @@ async function markerOnClick(e: any) {
 
       <LImageOverlay url="/maps/the end.png" :bounds="[[0, 0], [200, 250]]"/>
 
-      <LMarker :lat-lng="[lat, lon]">
+      <LMarker :lat-lng="[coordinate.latitude, coordinate.longitude]">
         <LIcon icon-url="/markers/YOU ARE HERE.png" :icon-size="[755/7, 272/7]"/>
       </LMarker>
 
@@ -138,7 +148,7 @@ async function markerOnClick(e: any) {
         <LIcon icon-url="/markers/GRADUATION GATEWAY.png" :icon-size="[1320/8, 482/8]"/>
       </LMarker>
     </LMap>
-
+    <Sidebar/>
   </div>
 </template>
 

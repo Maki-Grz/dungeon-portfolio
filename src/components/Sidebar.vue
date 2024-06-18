@@ -37,7 +37,7 @@ const closeSidebar = () => {
         </div>
         <div class="sidebar__body-content" v-for="each in mission.content" :key="each.name">
           <h2>{{ each.title }}</h2>
-          <p>{{ each.description }}</p>
+          <p v-html="each.description.replace(/\n/g, '<br>')"></p>
         </div>
         <div class="sidebar__body-img">
           <div class="sidebar__body-img-each" v-for="(each, i) in mission.img_content" :key="i">

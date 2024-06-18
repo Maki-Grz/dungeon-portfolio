@@ -69,5 +69,25 @@
     "links": [
       "https://www.minecraft.net/"
     ]
+  },
+  {
+    "name": "MODDED MARSH",
+    "img": "donjon.png",
+    "type": "EXPERIENCES",
+    "map": "UNDERWORLD",
+    "img_context": "https://pbs.twimg.com/media/FjPVr9WX0AAnKmJ?format=jpg&name=large",
+    "description_context": "Positioned on Modded in the development of features and bug resolution of the entire site (April 2023 - March 2024).",
+    "content": [
+      {
+        "title": "Different tasks that I carried out for Modded",
+        "description": "- Crafting and maintaining the client site with NuxtJS (front-end and back-end).\n- Designing, developing, and maintaining the administrative panel with NuxtJS (front-end and back-end).\n- Successfully deployed to Cloudflare using Pages and Workers.\n- Leveraging the Trello application for smooth project management.\n- Employing version control with GitLab and setting up CI/CD for efficient workflow.\n- Creating and managing functionality with the Stripe API for seamless payments and subscriptions.\n- Implementing various API integrations for enhanced performance (such as remote server launch).\n- Utilizing Cloudflare's KV integration for efficient storage of key-value information.\n- Building and maintaining SSO for secure user connections.\n- Skillfully integrating, developing, and maintaining a mailing API.\n- Ensuring the development and upkeep of front-end functionality of the launcher's menu."
+      }
+    ],
+    "img_content": [
+      "https://pbs.twimg.com/media/FjPVr9WX0AAnKmJ?format=jpg&name=large"
+    ],
+    "links": [
+      "https://www.modded.fr/"
+    ]
   }
 ]

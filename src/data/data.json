@@ -89,5 +89,25 @@
     "links": [
       "https://www.modded.fr/"
     ]
+  },
+  {
+    "name": "PALADIUM PEAKS",
+    "img": "final.png",
+    "type": "EXPERIENCES",
+    "map": "UNDERWORLD",
+    "img_context": "https://ghost.paladium-pvp.fr/content/images/2023/02/Web-1920---111-1.png",
+    "description_context": "Commissioned by Paladium for the complete development of user support and an administrative panel to manage tickets.\n\n (Since March 2024).",
+    "content": [
+      {
+        "title": "Different tasks that I carried out for Paladium <3",
+        "description": "• Front-end and back-end development of customer support with NuxtJS.\n• Deployment on a private VPS, implementation of CI/CD with GitHub Action.\n• Use of the GitHub backlog for project management.\n• Development and integration of an API with NestJS for ticket management.\n• NuxtJS front-end and back-end development of the administrative panel allowing efficient ticket management.\n• Design, maintenance and creation of the MongoDB database.\u2028• Integration of a mailing API to simplify the sending of commercial emails (account creation, payment confirmation, subscription renewal, etc.) from different platforms.\n• Integration of a generic NuxtJS front-end library simplifying user authentication from SSO, displaying notifications, etc.\n• Maintaining the various sites and component libraries in operational conditions."
+      }
+    ],
+    "img_content": [
+      "https://ghost.paladium-pvp.fr/content/images/2022/07/image-6.png"
+    ],
+    "links": [
+      "https://www.paladium-pvp.fr/"
+    ]
   }
 ]

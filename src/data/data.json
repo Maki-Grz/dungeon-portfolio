@@ -109,5 +109,28 @@
     "links": [
       "https://www.paladium-pvp.fr/"
     ]
+  },
+  {
+    "name": "OLD OCEAN",
+    "img": "external.png",
+    "type": "PORTFOLIO V1",
+    "map": "UNDERWORLD",
+    "img_context": "https://www.maxgrz.fr/about.png",
+    "description_context": "My old portfolio, undoubtedly more professional but less representative of my current skills and is not kept up to date.",
+    "content": [
+      {
+        "title": "Version 1 Portfolio (NextJS 14.1.4 & Azure SWA)",
+        "description": "Developed with the NextJS 14.1.4 framework, using MongoDB as databases and Azure Static Web App as host. \n The first commit dates from September 16, 2022, 2 years of maintenance and regular updates. A real showcase of my experiences with my other site Netanime.\n\n Initially inspired by Kuon Yagi's portfolio."
+      }
+    ],
+    "img_content": [
+      "https://www.maxgrz.fr/about.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRb7IjnluFly3h-eTu-gj4q77PLByVvuPRw&s"
+    ],
+    "links": [
+      "https://v1.maxgrz.fr/",
+      "https://kuon-yagi-portfolio.netlify.app/"
+    ]
   }
+
 ]

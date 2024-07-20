@@ -1,21 +1,22 @@
 <script setup lang="ts">
 import MineButton from "~/components/MineButton.vue";
 import useCoordinate from "~/composables/useCoordinate";
-import data from '~/data/data.json';
 
 const sidebar = useState('sidebar', () => ({showing: false, title: "START COAST"}));
 const {setCoordinate} = useCoordinate();
 
+const { $experiences }: any = useNuxtApp();
+
 const mission = ref<any>(null);
 
 watch(() => sidebar.value.title, (newTitle) => {
-  mission.value = data.find((e: any) => e.name === newTitle);
+  mission.value = $experiences().find((e: any) => e.name === newTitle);
 }, {immediate: true});
 
 const closeSidebar = () => {
   sidebar.value.showing = false;
   sidebar.value.title = 'START COAST';
-  setCoordinate(-100, -100);
+  setCoordinate(50, 75);
 };
 </script>
 
@@ -24,28 +25,28 @@ const closeSidebar = () => {
     <div class="sidebar" v-if="sidebar.showing && mission">
       <div class="sidebar__header">
         <div class="sidebar__header-informations">
-          <NuxtImg :src="`/markers/${mission.img}`" alt="donjon"/>
-          <span>{{ mission.type }}</span>
+          <NuxtImg :src="`/markers/${mission.icon}`" alt="donjon"/>
+          <span>{{ mission.tag }}</span>
           <h1>{{ mission.name }}</h1>
         </div>
         <button @click="closeSidebar">CLOSE</button>
       </div>
       <div class="sidebar__body">
         <div class="sidebar__body-synopsis">
-          <NuxtImg :src="mission.img_context" alt="img_context"/>
-          <p>{{ mission.description_context }}</p>
+          <NuxtImg :src="mission.img" alt="img"/>
+          <p>{{ mission.description }}</p>
         </div>
-        <div class="sidebar__body-content" v-for="each in mission.content" :key="each.name">
+        <div class="sidebar__body-content" v-for="each in mission.content" :key="each.title">
           <h2>{{ each.title }}</h2>
           <p v-html="each.description.replace(/\n/g, '<br>')"></p>
         </div>
-        <div class="sidebar__body-img">
-          <div class="sidebar__body-img-each" v-for="(each, i) in mission.img_content" :key="i">
-            <NuxtImg :src="each" alt="img__content"/>
+        <div class="sidebar__body-links">
+          <div class="sidebar__body-links-each" v-for="(each, i) in mission.links" :key="i">
+            <NuxtLink :to="each" external target="_blank">{{ each }}</NuxtLink>
           </div>
         </div>
         <div class="sidebar__body-links">
-          <div class="sidebar__body-links-each" v-for="(each, i) in mission.links" :key="i">
+          <div class="sidebar__body-links-each" v-for="(each, i) in mission.files" :key="i">
             <NuxtLink :to="each" external target="_blank">{{ each }}</NuxtLink>
           </div>
         </div>
@@ -170,20 +171,6 @@ const closeSidebar = () => {
       font-family: Arial, serif;
       font-size: .9rem;
       margin: 0;
-    }
-  }
-
-  .sidebar__body-img {
-    margin-top: 1rem;
-    display: flex;
-    overflow-x: auto;
-    align-items: center;
-
-    img {
-      height: 17rem;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-right: 0.5rem;
     }
   }
 

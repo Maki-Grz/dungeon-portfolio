@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import useCoordinate from "~/composables/useCoordinate";
 import useSwitchMap from "~/composables/useSwitchMap";
+import Loader from "~/components/Loader.vue";
 
 useHead({
   title: 'Maximilien Grzeczka - Dungeon Portfolio',
 })
 
 const sidebar = useState('sidebar', () => ({showing: false, title: "START COAST"}));
+const loading = ref({state: true, percentage: 0});
 const {coordinate} = useCoordinate();
+const {$experiences} = useNuxtApp();
 
 const map: any = ref(null);
 const width = ref(390);
@@ -20,8 +23,33 @@ const bounds = computed(() =>
     ] as L.LatLngBoundsLiteral
 );
 
-const mapInitialized = () => {
+const updateLoadingProgress = async (increment: number) => {
+  let currentIncrement = 0;
+
+  const intervalId = setInterval(() => {
+    if (loading.value.percentage + increment - currentIncrement >= 100) {
+      loading.value.percentage = 100;
+      clearInterval(intervalId);
+      loading.value.state = false;
+    } else {
+      loading.value.percentage += 1;
+      currentIncrement += 1;
+
+      if (currentIncrement >= increment) {
+        clearInterval(intervalId);
+      }
+    }
+  }, 50);
+};
+
+const initializeLoading = async () => {
+  await updateLoadingProgress(20);
+  if ($experiences()) await updateLoadingProgress(40);
+};
+
+const mapInitialized = async () => {
   const mapObject = map.value.leafletObject;
+  await updateLoadingProgress(40);
 };
 
 async function markerOnClick(e: any, title: string) {
@@ -39,10 +67,15 @@ async function markerOnClick(e: any, title: string) {
     sidebar.value.title = title;
   }
 }
+
+onMounted(() => {
+  initializeLoading();
+});
 </script>
 
 <template>
   <div style="height:100vh; width:100vw">
+    <Loader v-if="loading.state" :percentage="loading.percentage"/>
     <LMap style="background-color: #e7d6c2; z-index: 4" v-if="useSwitchMap().map.value"
           ref="map"
           :zoom="0"

@@ -1,6 +1,6 @@
 export default defineEventHandler(async (event) => {
     try {
-        const response = await fetch(`http://dungeon-portfolio-api.f8chfvfrhbb0gfcb.westeurope.azurecontainer.io:8500/experiences`);
+        const response = await fetch(`${process.env.API_URL}/experiences`);
 
         console.info(`Fetch status: ${response.status}`);
 

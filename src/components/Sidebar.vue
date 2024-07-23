@@ -27,7 +27,7 @@ const closeSidebar = () => {
     <div class="sidebar" v-if="sidebar.showing && mission">
       <div class="sidebar__header">
         <div class="sidebar__header-informations">
-          <NuxtImg :src="missionIcon" alt="donjon"/>
+          <img :src="missionIcon" alt="donjon"/>
           <span>{{ mission.tag }}</span>
           <h1>{{ mission.name }}</h1>
         </div>

@@ -6,7 +6,7 @@ const defaultImg: string = useSwitchMap().map.value ? '/markers/fight.png' : '/m
 
 <template>
   <div class="switch">
-    <NuxtImg :src="defaultImg" alt="icon"/>
+    <img :src="defaultImg" alt="icon"/>
     <span>{{ useSwitchMap().map.value ? 'UNDERWORLD' : 'THE END ?' }}</span>
     <MineButton @click="useSwitchMap().switchMap" text="CHANGE"/>
   </div>

@@ -2,11 +2,6 @@
 // nuxt.config.js or a specific page/component
 export default defineNuxtConfig({
     srcDir: 'src/',
-    routeRules: {
-        "/": {
-            prerender: true,
-        }
-    },
 
     devServer: {
         port: 5000

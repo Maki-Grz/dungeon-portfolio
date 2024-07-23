@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import useSwitchMap from "~/composables/useSwitchMap";
-
-const defaultImg: string = useSwitchMap().map.value ? '/markers/fight.png' : '/markers/time.png';
 </script>
 
 <template>
   <div class="switch">
-    <img :src="defaultImg" alt="icon"/>
+    <img :src="useSwitchMap().map.value ? '/markers/fight.png' : '/markers/time.png'" alt="icon"/>
     <span>{{ useSwitchMap().map.value ? 'UNDERWORLD' : 'THE END ?' }}</span>
     <MineButton @click="useSwitchMap().switchMap" text="CHANGE"/>
   </div>

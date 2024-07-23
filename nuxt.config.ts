@@ -1,33 +1,38 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // nuxt.config.js or a specific page/component
 export default defineNuxtConfig({
-  srcDir: 'src/',
+    srcDir: 'src/',
+    routeRules: {
+        "/": {
+            prerender: true,
+        }
+    },
 
-  devServer: {
-      port: 5000
-  },
+    devServer: {
+        port: 5000
+    },
 
-  modules: ['@nuxt/image', "nuxt3-leaflet", "@nuxt/fonts"],
+    modules: ['@nuxt/image', "nuxt3-leaflet", "@nuxt/fonts"],
 
-  components: [
-      {
-          path: '~/components',
-          pathPrefix: false,
-      },
-  ],
+    components: [
+        {
+            path: '~/components',
+            pathPrefix: false,
+        },
+    ],
 
-  css: ['~/assets/scss/global.scss'],
+    css: ['~/assets/scss/global.scss'],
 
-  vite: {
-      css: {
-          preprocessorOptions: {
-              scss: {
-                  additionalData: '@use "~/assets/scss/_variables.scss" as *;',
-              },
-          },
-      },
-  },
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@use "~/assets/scss/_variables.scss" as *;',
+                },
+            },
+        },
+    },
 
-  devtools: {enabled: false},
-  compatibilityDate: '2024-07-15',
+    devtools: {enabled: false},
+    compatibilityDate: '2024-07-15',
 });

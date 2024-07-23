@@ -5,7 +5,6 @@ const {me} = useMe();
 <template>
   <div v-show="me" class="profil">
     <div class="profil__container">
-      <NuxtImg class="pillager-mage" format="gif" src="/mobs/Enchanter.gif" alt="pillager mage"/>
       <div class="profil__container-card">
         <div class="profil__container-card-content">
           <NuxtImg src="https://www.maxgrz.fr/maximilien.jpg" alt="me"/>
@@ -52,13 +51,6 @@ const {me} = useMe();
   box-sizing: border-box;
   padding: 4rem 1rem;
   position: relative;
-
-  .pillager-mage {
-    position: absolute;
-    right: 1rem;
-    bottom: 0;
-    width: 8rem;
-  }
 }
 
 .profil__container-card {

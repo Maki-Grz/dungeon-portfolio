@@ -5,13 +5,15 @@ import useCoordinate from "~/composables/useCoordinate";
 const sidebar = useState('sidebar', () => ({showing: false, title: "START COAST"}));
 const {setCoordinate} = useCoordinate();
 
-const { $experiences }: any = useNuxtApp();
+const {$experiences}: any = useNuxtApp();
 
 const mission = ref<any>(null);
 
 watch(() => sidebar.value.title, (newTitle) => {
   mission.value = $experiences().find((e: any) => e.name === newTitle);
 }, {immediate: true});
+
+const missionIcon: string = mission.value ? `/markers/${mission.value.icon}` : '/markers/donjon.png';
 
 const closeSidebar = () => {
   sidebar.value.showing = false;
@@ -25,7 +27,7 @@ const closeSidebar = () => {
     <div class="sidebar" v-if="sidebar.showing && mission">
       <div class="sidebar__header">
         <div class="sidebar__header-informations">
-          <NuxtImg :src="`/markers/${mission.icon}`" alt="donjon"/>
+          <NuxtImg :src="missionIcon" alt="donjon"/>
           <span>{{ mission.tag }}</span>
           <h1>{{ mission.name }}</h1>
         </div>

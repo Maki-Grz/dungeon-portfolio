@@ -134,6 +134,7 @@ const closeSidebar = () => {
   margin: 0.5rem 0;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-right: 2rem;
 
   .sidebar__body-synopsis {
     display: flex;
@@ -148,7 +149,7 @@ const closeSidebar = () => {
     }
 
     p {
-      font-weight: 700;
+      font-weight: 600;
       color: #ffffff;
       font-family: Arial, serif;
       font-size: .9rem;
@@ -186,6 +187,32 @@ const closeSidebar = () => {
         border-radius: 2px;
       }
     }
+  }
+
+  /* width & Height */
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  /* Handle */
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
   }
 }
 

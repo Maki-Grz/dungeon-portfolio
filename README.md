@@ -30,9 +30,14 @@ Si nécessaire, installez [Node.js](https://nodejs.org/).
 
 1. **Cloner le projet** :
 
+   En HTTPS :
    ```bash
-   cd dungeon-portfolio-main
+   git clone https://github.com/Maki-Grz/dungeon-portfolio
    ```
+   Ou en SSH :
+    ````bash
+    git clone git@github.com:Maki-Grz/dungeon-portfolio.git
+    ````
 
 2. **Installer les dépendances** :
 

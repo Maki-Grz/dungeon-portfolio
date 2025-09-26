@@ -1,7 +1,7 @@
 {
   "name": "dungeon-portfolio",
   "author": "MAXIMILIEN GRZECZKA",
-  "description": "Portfolio inspired by Minecraft Dungeon UI (Epitech version, original : https://github.com/Maki-Grz/dungeon-portfolio",
+  "description": "Portfolio inspired by Minecraft Dungeon UI",
   "contributors": [
     {
       "name": "Maximilien Grzeczka",
@@ -9,7 +9,7 @@
       "url": "https://www.maxgrz.fr"
     }
   ],
-  "version": "1.7.1",
+  "version": "1.7.2",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",

@@ -1,0 +1,34 @@
+{
+  "name": "dungeon-portfolio",
+  "author": "MAXIMILIEN GRZECZKA",
+  "description": "Portfolio inspired by Minecraft Dungeon UI (Epitech version, original : https://github.com/Maki-Grz/dungeon-portfolio",
+  "contributors": [
+    {
+      "name": "Maximilien Grzeczka",
+      "email": "mini@ledret.ch",
+      "url": "https://www.maxgrz.fr"
+    }
+  ],
+  "version": "1.7.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "local": "npx nuxi dev",
+    "local:host": "npx nuxi dev --host 0.0.0.0",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.7.0",
+    "@nuxt/image": "^1.5.0",
+    "@vueuse/head": "^2.0.0",
+    "nuxt": "^3.12.1",
+    "nuxt3-leaflet": "^1.0.13",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.3"
+  }
+}

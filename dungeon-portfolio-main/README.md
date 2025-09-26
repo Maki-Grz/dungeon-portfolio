@@ -14,6 +14,7 @@ Projet original : [Maki-Grz/dungeon-portfolio](https://github.com/Maki-Grz/dunge
 ````
 
 👉 Vérifier votre configuration :
+
 ```bash
   node -v
   npm -v

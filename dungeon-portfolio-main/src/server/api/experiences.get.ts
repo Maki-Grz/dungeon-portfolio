@@ -1,0 +1,145 @@
+export default defineEventHandler(async (event) => {
+    try {
+        return [
+            {
+                "name": "START SAMPLE",
+                "img": "donjon.png",
+                "type": "STORY",
+                "map": "UNDERWORLD",
+                "img_context": "https://ghost.paladium-pvp.fr/content/images/2022/07/image-13.png",
+                "description_context": "Welcome there is the start of my adventure, dive into coding during pandemic (COVID-19), and engage with a supportive community. Their dream of joining Paladium’s team takes shape through learning and personal projects.",
+                "content": [
+                    {
+                        "title": "Discovering Paladium and Aspirations",
+                        "description": "Back in 2015, I stumbled upon Paladium, a French Minecraft PVP server, while watching videos. Fuze III, the mastermind behind Paladium, became my inspiration, and I dreamed of joining his team someday."
+                    },
+                    {
+                        "title": "Lockdown and My Dive into Coding",
+                        "description": "During the 2020 lockdown, I was in 8th grade, and I received my first computer. That’s when I delved into the world of programming, starting with C and then exploring JavaScript using NodeJS to create Discord bots."
+                    },
+                    {
+                        "title": "Learning and Personal Projects",
+                        "description": "Over the years, I engaged with talented developers and former Paladium employees. I honed my skills in technologies like NuxtJS, Vue, Tailwind, and Electron. Simultaneously, I worked on personal projects, including my portfolio (built with NextJS and MongoDB) and Netanime (using React, MongoDB, and NodeJS)."
+                    },
+                    {
+                        "title": "Community Engagement and Moderation",
+                        "description": "I actively participate in the 'Paladium Dev' Discord server, where I caught the attention of the friendly developer community. Eventually, I earned the role of moderator... Next part toward Modded Marsh."
+                    }
+                ],
+                "img_content": [
+                    "https://ghost.paladium-pvp.fr/content/images/2023/09/Minia-trailer-V9.png",
+                    "https://repository-images.githubusercontent.com/54995014/f8a350c6-6710-438f-97c4-ee691e8731e1"
+                ],
+                "links": [
+                    "https://www.paladium-pvp.fr/"
+                ]
+            },
+            {
+                "name": "WASTING WOODS",
+                "img": "donjon.png",
+                "type": "ABOUT",
+                "map": "UNDERWORLD",
+                "img_context": "https://cdn-uploads.gameblog.fr/img/news/418221_640097726ba44.jpg",
+                "description_context": "Embark on my Minecraft odyssey. Texture packs, servers, and a love for 1.16 and 1.18 define my blocky adventure.",
+                "content": [
+                    {
+                        "title": "Beginnings in Pocket Edition (2013)",
+                        "description": "In the quaint realm of Minecraft, my journey began back in 2013. Armed with my trusty mobile device, I delved into the pixelated world of Pocket Edition. The blocky landscapes unfolded before me, and I was hooked."
+                    },
+                    {
+                        "title": "Texture Packs and Creative Ventures",
+                        "description": "As the sun set and rose countless times, I discovered the magic of texture packs. Armed with my creativity, I crafted custom textures that transformed mundane blocks into works of art. My virtual toolbox overflowed with vibrant hues and intricate patterns."
+                    },
+                    {
+                        "title": "Building My Own Minecraft Universe (Server)",
+                        "description": "But why stop at textures? I yearned to shape entire worlds. So, I donned my builder’s hat and set forth to create servers. These digital realms buzzed with life as players explored, battled, and built together. My heart swelled with pride as my creations flourished."
+                    },
+                    {
+                        "title": "Redstone & Commands Blocks: My True Passion",
+                        "description": "Yet, amidst the towering castles and sprawling cities, one thing captivated me above all: redstone. The intricate circuits, hidden doors, and automated farms fueled my fascination. I tinkered, experimented, and occasionally blew things up (oops!). Redstone became my muse, my playground of logic and creativity."
+                    },
+                    {
+                        "title": "Versions Close to My Heart: 1.15, 1.16 and 1.18",
+                        "description": "Ah, the sweet nostalgia of version updates! While each brought new wonders, two hold a special place in my heart—the enchanting Nether Update (1.16) and the awe-inspiring Caves & Cliffs Update (1.18). The crimson forests, ancient debris, and elusive axolotls—they’re etched into my Minecraft memories. Don't forget the bees update (1.15) !"
+                    }
+                ],
+                "img_content": [
+                    "https://blogs.windows.com/wp-content/uploads/prod/sites/2/2016/12/Minecraft-Pocket-Edition_Ender-Dragon-Key-Art.png",
+                    "https://minecraft.fr/wp-content/uploads/2020/06/minecraft-1-16-mise-a-jour-nether.jpg",
+                    "https://minecraft.fr/wp-content/uploads/2021/11/minecraft-1-18-art-officiel.jpg"
+                ],
+                "links": [
+                    "https://www.minecraft.net/"
+                ]
+            },
+            {
+                "name": "MODDED MARSH",
+                "img": "donjon.png",
+                "type": "EXPERIENCES",
+                "map": "UNDERWORLD",
+                "img_context": "https://pbs.twimg.com/media/FjPVr9WX0AAnKmJ?format=jpg&name=large",
+                "description_context": "Positioned on Modded in the development of features and bug resolution of the entire site (April 2023 - March 2024).",
+                "content": [
+                    {
+                        "title": "Different tasks that I carried out for Modded",
+                        "description": "- Crafting and maintaining the client site with NuxtJS (front-end and back-end).\n- Designing, developing, and maintaining the administrative panel with NuxtJS (front-end and back-end).\n- Successfully deployed to Cloudflare using Pages and Workers.\n- Leveraging the Trello application for smooth project management.\n- Employing version control with GitLab and setting up CI/CD for efficient workflow.\n- Creating and managing functionality with the Stripe API for seamless payments and subscriptions.\n- Implementing various API integrations for enhanced performance (such as remote server launch).\n- Utilizing Cloudflare's KV integration for efficient storage of key-value information.\n- Building and maintaining SSO for secure user connections.\n- Skillfully integrating, developing, and maintaining a mailing API.\n- Ensuring the development and upkeep of front-end functionality of the launcher's menu."
+                    }
+                ],
+                "img_content": [
+                    "https://pbs.twimg.com/media/FjPVr9WX0AAnKmJ?format=jpg&name=large"
+                ],
+                "links": [
+                    "https://www.modded.fr/"
+                ]
+            },
+            {
+                "name": "PALADIUM PEAKS",
+                "img": "final.png",
+                "type": "EXPERIENCES",
+                "map": "UNDERWORLD",
+                "img_context": "https://ghost.paladium-pvp.fr/content/images/2023/02/Web-1920---111-1.png",
+                "description_context": "Commissioned by Paladium for the complete development of user support and an administrative panel to manage tickets.\n\n (Since March 2024).",
+                "content": [
+                    {
+                        "title": "Different tasks that I carried out for Paladium <3",
+                        "description": "• Front-end and back-end development of customer support with NuxtJS.\n• Deployment on a private VPS, implementation of CI/CD with GitHub Action.\n• Use of the GitHub backlog for project management.\n• Development and integration of an API with NestJS for ticket management.\n• NuxtJS front-end and back-end development of the administrative panel allowing efficient ticket management.\n• Design, maintenance and creation of the MongoDB database.\u2028• Integration of a mailing API to simplify the sending of commercial emails (account creation, payment confirmation, subscription renewal, etc.) from different platforms.\n• Integration of a generic NuxtJS front-end library simplifying user authentication from SSO, displaying notifications, etc.\n• Maintaining the various sites and component libraries in operational conditions."
+                    }
+                ],
+                "img_content": [
+                    "https://ghost.paladium-pvp.fr/content/images/2022/07/image-6.png"
+                ],
+                "links": [
+                    "https://www.paladium-pvp.fr/"
+                ]
+            },
+            {
+                "name": "OLD OCEAN",
+                "img": "external.png",
+                "type": "PORTFOLIO V1",
+                "map": "UNDERWORLD",
+                "img_context": "https://www.maxgrz.fr/about.png",
+                "description_context": "My old portfolio, undoubtedly more professional but less representative of my current skills and is not kept up to date.",
+                "content": [
+                    {
+                        "title": "Version 1 Portfolio (NextJS 14.1.4 & Azure SWA)",
+                        "description": "Developed with the NextJS 14.1.4 framework, using MongoDB as databases and Azure Static Web App as host. \n The first commit dates from September 16, 2022, 2 years of maintenance and regular updates. A real showcase of my experiences with my other site Netanime.\n\n Initially inspired by Kuon Yagi's portfolio."
+                    }
+                ],
+                "img_content": [
+                    "https://www.maxgrz.fr/about.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRb7IjnluFly3h-eTu-gj4q77PLByVvuPRw&s"
+                ],
+                "links": [
+                    "https://v1.maxgrz.fr/",
+                    "https://kuon-yagi-portfolio.netlify.app/"
+                ]
+            }
+        ]
+    } catch (err: any) {
+        console.error(err.message);
+        throw createError({
+            message: "Internal Error",
+            statusCode: 500,
+        });
+    }
+});

@@ -38,12 +38,12 @@ const closeSidebar = () => {
         </div>
         <div class="sidebar__body-links">
           <div v-for="(each, i) in mission.links" :key="i" class="sidebar__body-links-each">
-            <NuxtLink :to="each" external target="_blank">{{ each }}</NuxtLink>
+            <NuxtLink :to="each" external rel="preload" target="_blank">{{ each }}</NuxtLink>
           </div>
         </div>
         <div class="sidebar__body-links">
           <div v-for="(each, i) in mission.files" :key="i" class="sidebar__body-links-each">
-            <NuxtLink :to="each" external target="_blank">{{ each }}</NuxtLink>
+            <NuxtLink :to="each" external rel="preload" target="_blank">{{ each }}</NuxtLink>
           </div>
         </div>
       </div>

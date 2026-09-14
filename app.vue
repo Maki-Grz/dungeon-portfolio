@@ -4,37 +4,38 @@
 
 <script lang="ts" setup>
 useHead({
-  title: 'Maximilien Grzeczka - Dungeon Portfolio',
+  titleTemplate: '%s | Maximilien Grzeczka',
   meta: [
     {charset: 'utf-8'},
     {
       name: 'description',
-      content: 'Welcome to my portfolio! I\'m a full stack web developer. Discover my awesome skills and projects showcased in an interactive map that draws inspiration from the legendary Minecraft Dungeon!'
+      content: 'Maximilien Grzeczka, AI Engineer and Full Stack Rust/SAP Developer in Chantilly and Paris. Explore my projects, writing and experience.'
     },
     {name: 'author', content: 'Maximilien Grzeczka'},
-    {name: 'keywords', content: 'maximilien grzeczka, developer, chantilly, website, freelance, application, software, full stack, dungeon, paladium, modded, minecraft'},
+    {name: 'keywords', content: 'Maximilien Grzeczka, AI Engineer, Rust, SAP, SAP BTP, generative AI, full stack developer, Chantilly, Paris'},
     {name: 'theme-color', content: '#e7d6c2'},
     {name: 'robots', content: 'index, follow'},
-    {name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'},
+    {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+    {property: 'og:title', content: 'Maximilien Grzeczka | AI Engineer & Full Stack Rust/SAP Developer'},
     {property: 'og:type', content: 'website'},
     {
       property: 'og:description',
-      content: 'Welcome to my portfolio! I\'m a full stack web developer. Discover my awesome skills and projects showcased in an interactive map that draws inspiration from the legendary Minecraft Dungeon!'
+      content: 'AI Engineer and Full Stack Rust/SAP Developer in Chantilly and Paris.'
     },
     {property: 'og:locale', content: 'fr_FR'},
-    {property: 'og:site_name', content: 'Maximilien Grzeczka - Dungeon Portfolio'},
+    {property: 'og:site_name', content: 'Maximilien Grzeczka'},
     {property: 'og:image', content: 'https://www.maxgrz.fr/images/map.jpg'},
     {property: 'og:url', content: 'https://www.maxgrz.fr'},
     {property: 'twitter:card', content: 'summary_large_image'},
     {property: 'twitter:url', content: 'https://www.maxgrz.fr'},
     {
       property: 'twitter:description',
-      content: 'Welcome to my portfolio! I\'m a full stack web developer. Discover my awesome skills and projects showcased in an interactive map that draws inspiration from the legendary Minecraft Dungeon!'
+      content: 'AI Engineer and Full Stack Rust/SAP Developer in Chantilly and Paris.'
     },
     {property: 'twitter:image', content: 'https://www.maxgrz.fr/images/map.jpg'},
     {property: 'twitter:site', content: '@Maki_Grz'},
     {property: 'twitter:creator', content: '@Maki_Grz'},
-    {property: 'twitter:title', content: 'Maximilien Grzeczka - Dungeon Portfolio'}
+    {property: 'twitter:title', content: 'Maximilien Grzeczka | AI Engineer & Full Stack Rust/SAP Developer'}
   ],
   link: [
     {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}

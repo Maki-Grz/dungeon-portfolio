@@ -7,22 +7,22 @@ const {contact, switchContact} = useContact();
 <template>
   <div v-if="contact" class="contact-form-wrapper" @click.self="">
     <form class="contact-form" @submit="">
-      <NuxtImg alt="me" format="gif" src="/mobs/KeyGolem_Diamond_Alert.gif"/>
-      <h1>Contact</h1>
+      <NuxtImg alt="Contact guardian" format="gif" height="100" width="100" src="/mobs/KeyGolem_Diamond_Alert.gif"/>
+      <h1>Écrire à Maximilien</h1>
       <label>
-        Name
-        <input placeholder="Your name" required type="text"/>
+        Nom
+        <input placeholder="Votre nom" required type="text"/>
       </label>
       <label>
-        Email
-        <input placeholder="Your email" required type="email"/>
+        E-mail
+        <input placeholder="Votre adresse e-mail" required type="email"/>
       </label>
       <label>
         Message
-        <textarea placeholder="Your message" required></textarea>
+        <textarea placeholder="Votre message" required></textarea>
       </label>
-      <button class="submit" type="submit">Cast</button>
-      <button class="reset" type="reset" @click="switchContact()">Quit</button>
+      <button class="submit" type="submit">Envoyer</button>
+      <button class="reset" type="reset" @click="switchContact()">Fermer</button>
     </form>
   </div>
 </template>
@@ -48,6 +48,8 @@ const {contact, switchContact} = useContact();
   box-shadow: 0 4px 0 #404241, 0 -4px #202320, 4px 0 #222120, -4px 0 #42413E;
   filter: drop-shadow(4px 4px 0px rgba(23, 23, 23, 0.7));
   width: 40vw;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
 
   img {
     position: absolute;
@@ -125,7 +127,32 @@ button {
 
 @media screen and (max-width: 935px) {
   .contact-form {
-    width: 70vw;
+    width: min(70vw, 34rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    width: calc(100vw - 2rem);
+    padding: 1rem;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      top: -3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    label {
+      font-size: 1.1rem;
+    }
+
+    button {
+      font-size: 1.2rem;
+    }
   }
 }
 </style>

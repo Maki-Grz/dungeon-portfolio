@@ -9,7 +9,7 @@
       "url": "https://www.maxgrz.fr"
     }
   ],
-  "version": "1.7.3",
+  "version": "1.8.0",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",
@@ -23,12 +23,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.7.0",
-    "@nuxt/image": "^1.5.0",
+    "@nuxt/fonts": "^0.14.0",
+    "@nuxt/image": "^2.1.0",
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
     "@vueuse/head": "^2.0.0",
-    "nuxt": "^3.12.1",
-    "nuxt3-leaflet": "^1.0.13",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.3"
+    "leaflet": "^1.9.4",
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.1"
   }
 }

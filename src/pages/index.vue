@@ -2,11 +2,12 @@
 import useCoordinate from "~/composables/useCoordinate";
 import useSwitchMap from "~/composables/useSwitchMap";
 import useContact from "../composables/useContactForm";
+import {LIcon, LImageOverlay, LMap, LMarker} from "@vue-leaflet/vue-leaflet";
 
 import Loader from "~/components/Loader.vue";
 
 useHead({
-  title: 'Maximilien Grzeczka - Dungeon Portfolio',
+  title: 'Interactive Portfolio',
 })
 
 const {openSidebar} = useSidebar();
@@ -136,7 +137,6 @@ onMounted(() => {
           @mouseout="hoverMe(false)"
           @mouseover="hoverMe(true)">
         <LIcon :icon-size="[1198/6, 301/6]" icon-url="/markers/WAKE ME UP.png"/>
-        >
       </LMarker>
 
       <LMarker
@@ -145,7 +145,6 @@ onMounted(() => {
           @mouseout="hoverMe(false)"
           @mouseover="hoverMe(true)">
         <LIcon :icon-size="[200/2, 200/2]" :icon-url="hoverMeVisible ? '/mobs/KeyGolemWithStars.gif' : '/mobs/KeyGolem_Diamond_Sleeping.gif'"/>
-        >
       </LMarker>
 
       <LMarker :lat-lng="[118, 320]" @click="markerOnClick($event, 'CASTLE CLIFF')">

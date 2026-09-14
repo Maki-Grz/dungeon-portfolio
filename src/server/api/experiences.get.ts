@@ -1,4 +1,4 @@
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async () => {
     try {
         return [
             {
@@ -7,23 +7,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://ghost.paladium-pvp.fr/content/images/2022/07/image-13.png",
-                "description_context": "Welcome there is the start of my adventure, dive into coding during pandemic (COVID-19), and engage with a supportive community. Their dream of joining Paladium’s team takes shape through learning and personal projects.",
+                "description_context": "The first landmark in my journey: curiosity became code, and small experiments became the foundation for everything that followed.",
                 "content": [
                     {
-                        "title": "Discovering Paladium and Aspirations",
-                        "description": "Back in 2015, I stumbled upon Paladium, a French Minecraft PVP server, while watching videos. Fuze III, the mastermind behind Paladium, became my inspiration, and I dreamed of joining his team someday."
+                        "title": "Where the curiosity started",
+                        "description": "Paladium introduced me to online communities, ambitious products and the idea that software could create a world people return to every day."
                     },
                     {
-                        "title": "Lockdown and My Dive into Coding",
-                        "description": "During the 2020 lockdown, I was in 8th grade, and I received my first computer. That’s when I delved into the world of programming, starting with C and then exploring JavaScript using NodeJS to create Discord bots."
+                        "title": "From first scripts to real systems",
+                        "description": "During the 2020 lockdown, I learned C, then JavaScript and Node.js by building Discord bots. Each project taught me to turn an idea into something usable."
                     },
                     {
-                        "title": "Learning and Personal Projects",
-                        "description": "Over the years, I engaged with talented developers and former Paladium employees. I honed my skills in technologies like NuxtJS, Vue, Tailwind, and Electron. Simultaneously, I worked on personal projects, including my portfolio (built with NextJS and MongoDB) and Netanime (using React, MongoDB, and NodeJS)."
+                        "title": "Learning by shipping",
+                        "description": "I moved from prototypes to full-stack applications with Vue, Nuxt, React, Node.js and databases. Personal projects became a practical laboratory for architecture, performance and product thinking."
                     },
                     {
-                        "title": "Community Engagement and Moderation",
-                        "description": "I actively participate in the 'Paladium Dev' Discord server, where I caught the attention of the friendly developer community. Eventually, I earned the role of moderator... Next part toward Modded Marsh."
+                        "title": "A community that opened doors",
+                        "description": "Sharing work with developers helped me find mentors, collaborators and my first professional opportunities. The next step was building software for a real business."
                     }
                 ],
                 "img_content": [
@@ -40,23 +40,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://cdn.maxgrz.fr/images/modded.avif",
-                "description_context": "Crossing through the Modded Marsh was a year-long challenge, where I navigated complex e-commerce development and microservices architecture while collaborating with creative teams.",
+                "description_context": "At Modded, I learned how product, commerce and infrastructure meet when a platform must serve real customers every day.",
                 "content": [
                     {
-                        "title": "Building E-commerce at Scale",
-                        "description": "From March 2023 to March 2024, I developed www.modded.fr, integrating Stripe and creating features for over 10,000 users."
+                        "title": "A commerce platform from the ground up",
+                        "description": "I helped build modded.fr with payments, catalog flows and customer-facing features designed for a growing community of more than 10,000 users."
                     },
                     {
-                        "title": "Microservices and Reliability",
-                        "description": "I designed and maintained 5 microservices, ensuring critical bug resolution in record time, pushing over 480 commits."
+                        "title": "Reliable services behind the product",
+                        "description": "I maintained five services, connected APIs and handled production issues while keeping delivery moving through hundreds of focused changes."
                     },
                     {
-                        "title": "Team Collaboration",
-                        "description": "Using Trello for agile management, I coordinated closely with creative leads and developers, sharpening both technical and organizational skills."
+                        "title": "Engineering with a team",
+                        "description": "Working with developers and creative leads taught me to communicate trade-offs clearly, make pragmatic decisions and ship in short feedback loops."
                     },
                     {
-                        "title": "Next Step",
-                        "description": "After taming the Modded Marsh, I set my sights on the deeper woods of industry experience… toward Wasting Woods."
+                        "title": "What it changed",
+                        "description": "This experience gave me a taste for systems that matter beyond a demo: observable, maintainable software that stays useful after launch."
                     }
                 ],
                 "img_content": [],
@@ -70,23 +70,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://cdn.maxgrz.fr/images/certifications/windows.avif",
-                "description_context": "The Wasting Woods represent my intense and immersive period working for Paladium Games. It was a test of endurance, balancing real-time features with the demands of a community of over 100,000 players.",
+                "description_context": "At Paladium Games, I worked on production tools used by a large gaming community and learned to make real-time software dependable under pressure.",
                 "content": [
                     {
-                        "title": "Full-Stack Development",
-                        "description": "Between March 2024 and September 2025, I worked on support systems, real-time chat, APIs, and admin panels to streamline Paladium’s operations."
+                        "title": "Tools for a living platform",
+                        "description": "I built support systems, real-time chat, APIs and administration panels that helped teams operate a community of more than 100,000 players."
                     },
                     {
-                        "title": "Real-Time Challenges",
-                        "description": "I implemented WebSockets and optimized live data processing, cutting response times by up to 80%."
+                        "title": "Making real-time work feel simple",
+                        "description": "WebSockets, event flows and careful data handling made live features faster and more predictable for both users and operators."
                     },
                     {
-                        "title": "Agile Management",
-                        "description": "We managed workflows using GitHub and Jira, delivering continuous updates to a huge community."
+                        "title": "Shipping continuously",
+                        "description": "GitHub and Jira supported a steady rhythm of releases, reviews and fixes, with production feedback guiding the next decision."
                     },
                     {
-                        "title": "Transition",
-                        "description": "Surviving the Wasting Woods sharpened my coding resilience, preparing me for the academic climb of Learning Lagoon."
+                        "title": "The lesson",
+                        "description": "This role strengthened my instincts for observability, incident response and clear engineering priorities."
                     }
                 ],
                 "img_content": [],
@@ -100,23 +100,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://www.km0.info/wp-inside/uploads/2020/06/epitech-live-stream-17-juin.jpg",
-                "description_context": "The Learning Lagoon symbolizes my academic journey, where I deepened my technical expertise and built a strong foundation for future challenges.",
+                "description_context": "Formal study gave structure to my practice: algorithms, software design and teamwork now support the systems I build professionally.",
                 "content": [
                     {
-                        "title": "BTS SIO - Chantilly",
-                        "description": "From 2023 to 2025, I studied BTS SIO (SLAM option), graduating top of my class with 18.25/20."
+                        "title": "BTS SIO, SLAM",
+                        "description": "From 2023 to 2025, I studied software development in Chantilly, graduating top of my class with an 18.25/20 average."
                     },
                     {
-                        "title": "Epitech Paris",
-                        "description": "Starting in 2025, I began my Master of Science in Computer Science at Epitech, strengthening both my theory and applied projects."
+                        "title": "MSc Artificial Intelligence",
+                        "description": "At Epitech Paris, I deepen my understanding of artificial intelligence while continuing to learn through ambitious, hands-on projects."
                     },
                     {
-                        "title": "Certifications",
-                        "description": "I pursued certifications from Microsoft, Apple, ScyllaDB, and The Linux Foundation, showcasing my commitment to continuous learning."
+                        "title": "Learning beyond the classroom",
+                        "description": "Microsoft Azure, Apple, ScyllaDB and Linux Foundation certifications complement project work with a disciplined technical foundation."
                     },
                     {
-                        "title": "Next Stage",
-                        "description": "From the calm of the Learning Lagoon, I climbed towards the heights of Paladium Peaks."
+                        "title": "The next challenge",
+                        "description": "The academic foundation opened the door to larger teams, stronger constraints and more demanding production environments."
                     }
                 ],
                 "img_content": [],
@@ -130,23 +130,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://cdn.maxgrz.fr/images/paladium.avif",
-                "description_context": "Climbing Paladium Peaks meant proving myself directly within the Paladium ecosystem. Each project demanded precision, security, and impactful design.",
+                "description_context": "A focused internship at Paladium turned years of community familiarity into professional engineering experience.",
                 "content": [
                     {
-                        "title": "June 2024 Internship",
-                        "description": "I had the chance to work closely with Paladium developers for a one-month experience in Rennes, refining my skills in full-stack development."
+                        "title": "A first professional immersion",
+                        "description": "During a month in Rennes, I worked alongside Paladium developers and learned how a production team plans, reviews and delivers software."
                     },
                     {
-                        "title": "Support Systems",
-                        "description": "I contributed to developing tools ensuring better player experiences, from admin dashboards to real-time monitoring."
+                        "title": "Operational tooling",
+                        "description": "I contributed to dashboards and support tools that gave teams better visibility into player activity and day-to-day operations."
                     },
                     {
-                        "title": "Connection with Community",
-                        "description": "This short but intense climb helped me strengthen my bond with Paladium’s developer ecosystem."
+                        "title": "From user to contributor",
+                        "description": "The experience showed me how much product quality depends on listening closely to the people who use and maintain it."
                     },
                     {
-                        "title": "Next Adventure",
-                        "description": "Leaving Paladium Peaks, I ventured into Rusty Rocks, where new programming languages awaited."
+                        "title": "A new direction",
+                        "description": "I left with a stronger interest in systems programming, performance and the guarantees offered by Rust."
                     }
                 ],
                 "img_content": [],
@@ -160,23 +160,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://www.rust-lang.org/static/images/rust-social-wide.jpg",
-                "description_context": "Rusty Rocks symbolizes my exploration of Rust, a language both powerful and challenging, shaping my mindset for robust systems programming.",
+                "description_context": "Rust changed how I think about software: explicit ownership, strong guarantees and performance are design tools, not afterthoughts.",
                 "content": [
                     {
-                        "title": "Getting Started with Rust",
-                        "description": "I obtained certifications from The Linux Foundation and ScyllaDB, diving into Rust fundamentals."
+                        "title": "A systems perspective",
+                        "description": "Rust gave me a practical way to study memory safety, concurrency and API design while building software that stays predictable under load."
                     },
                     {
-                        "title": "Rust API RAG",
-                        "description": "I built a Retrieval-Augmented Generation API in Rust using Actix-web, integrating document ingestion, embeddings in CosmosDB, and precise search pipelines."
+                        "title": "RAG and high-performance services",
+                        "description": "I explored document ingestion, embeddings and retrieval pipelines with Rust and Actix Web, connecting systems programming with modern AI applications."
                     },
                     {
-                        "title": "Mindset Shift",
-                        "description": "Rust taught me new paradigms of safety and performance, valuable for both personal and professional projects."
+                        "title": "Why it matters",
+                        "description": "The language sharpened my approach to boundaries, errors and resource usage. Those habits now influence every stack I work with."
                     },
                     {
-                        "title": "Next Step",
-                        "description": "From Rusty Rocks, I descended into the fiery trials of Volcanic Ventures."
+                        "title": "Open-source work",
+                        "description": "That path led to geniex-rs, my open-source Rust bindings for Qualcomm GenieX and local AI on Snapdragon devices."
                     }
                 ],
                 "img_content": [],
@@ -190,23 +190,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://cdn.maxgrz.fr/images/projets/netanime-projects.avif",
-                "description_context": "Volcanic Ventures represents the explosive projects where I handled streaming, APIs, and deployments in the cloud under real pressure.",
+                "description_context": "This chapter collects the projects where architecture, deployment and product constraints met: streaming, AI services and cloud infrastructure.",
                 "content": [
                     {
-                        "title": "Netanime Project",
-                        "description": "I developed Netanime, a streaming platform with full-stack design: Nuxt client, Actix API, HLS streaming, OAuth2 (Google, Discord, Microsoft), and mailing integrations."
+                        "title": "Netanime",
+                        "description": "Netanime grew from a prototype into a streaming platform with a Nuxt client, Actix API, HLS delivery, OAuth2 and service integrations."
                     },
                     {
-                        "title": "Azure Deployment",
-                        "description": "I deployed Netanime on Microsoft Azure, ensuring scalability, and handled over 20,000 impressions and 3,000 clicks."
+                        "title": "Deploying for real users",
+                        "description": "Azure deployments, caching and monitoring turned the application into a service that could handle real traffic rather than a project that only worked locally."
                     },
                     {
-                        "title": "Fire-Tested Learning",
-                        "description": "Like venturing through lava, this project tested my endurance but resulted in immense growth."
+                        "title": "The useful failures",
+                        "description": "The difficult parts were the most instructive: authentication boundaries, streaming reliability and the cost of decisions made too early."
                     },
                     {
-                        "title": "Next Journey",
-                        "description": "After Volcanic Ventures, I ventured into the icy calm of Snowy Slow."
+                        "title": "A bridge to enterprise software",
+                        "description": "These projects prepared me to apply the same product and engineering discipline inside enterprise systems."
                     }
                 ],
                 "img_content": [],
@@ -220,23 +220,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://nubiapage.com/wp-content/uploads/1x-1-1-2048x1460.jpg",
-                "description_context": "Snowy Slow represents my time at VINCI Construction SI, where precision and patience were key, much like navigating a frozen path.",
+                "description_context": "At VINCI Construction, I work where enterprise software, generative AI and cloud architecture meet real operational needs.",
                 "content": [
                     {
-                        "title": "VINCI Construction SI",
-                        "description": "In January–February 2025, I developed a training tracking app for 400 collaborators using SAP CAP."
+                        "title": "AI and SAP at VINCI Construction",
+                        "description": "As an SAP Business AI and BTP Solutions Architect, I design services and AI experiences for enterprise workflows at VINCI Construction."
                     },
                     {
-                        "title": "Database and CI/CD",
-                        "description": "I designed the HANA Cloud database and integrated it with VINCI’s SAP environment, including CI/CD pipelines."
+                        "title": "Cloud-native foundations",
+                        "description": "I build with SAP CAP, HANA Cloud and Azure DevOps, from data models and APIs to deployment pipelines that teams can operate confidently."
                     },
                     {
-                        "title": "Agile in the Snow",
-                        "description": "With Azure DevOps sprints, I coordinated a Scrum team of 5, maintaining agility even in the frozen landscape."
+                        "title": "AI that serves the workflow",
+                        "description": "My focus is practical generative AI: agents with SAP Joule, RAG pipelines with SAP AI Core and automation that improves how people work with ERP data."
                     },
                     {
-                        "title": "Next Transition",
-                        "description": "From Snowy Slow, I marched into the grand halls of Technology Temple."
+                        "title": "The principle",
+                        "description": "Enterprise engineering is successful when the technology is useful, observable and aligned with the people who depend on it."
                     }
                 ],
                 "img_content": [],
@@ -250,23 +250,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://atlasps.com/wp-content/uploads/2022/08/Azure-Blog-Banner.png",
-                "description_context": "The Technology Temple is where I gathered the tools of my craft: frameworks, clouds, databases, and APIs.",
+                "description_context": "My professional work at VINCI focuses on SAP BTP, enterprise AI and Azure. Alongside that work, my personal and open-source projects explore Rust, TypeScript and local AI.",
                 "content": [
                     {
-                        "title": "Full-Stack Toolbox",
-                        "description": "From NodeJS, React, Vue, and Angular to SAP CAP and Electron, I explored diverse stacks."
+                        "title": "Application engineering",
+                        "description": "For professional applications, I work with SAP CAP, TypeScript, Vue, Nuxt, Svelte, React and Node.js. Rust belongs to my personal and open-source systems projects."
                     },
                     {
-                        "title": "Database Skills",
-                        "description": "I worked with MongoDB, HANA, MySQL, MariaDB, ScyllaDB, and vector databases, adapting to each project’s need."
+                        "title": "Data with a purpose",
+                        "description": "I work with HANA Cloud, MongoDB, MySQL, ScyllaDB and vector search, selecting storage around the access patterns and guarantees a product needs."
                     },
                     {
-                        "title": "Cloud and Deployment",
-                        "description": "I mastered Azure, Google Cloud, and CI/CD pipelines for continuous delivery and scalability."
+                        "title": "Delivery and operations",
+                        "description": "Azure, CI/CD, observability and careful deployment practices turn a promising codebase into a service people can rely on."
                     },
                     {
-                        "title": "Next Chapter",
-                        "description": "From the temple, I sailed toward Old Ocean, revisiting my freelance adventures."
+                        "title": "A balanced toolkit",
+                        "description": "Technology is only valuable when it makes a constraint easier to solve, a system safer to change or a person more effective."
                     }
                 ],
                 "img_content": [],
@@ -280,23 +280,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://www.miramas.fr/sites/default/files/styles/slider/public/2021-02/urssaf-logo.png?h=e71b75dc&itok=68g6MpH5",
-                "description_context": "Old Ocean reflects my freelance journey since 2021: a wide and unpredictable sea where I learned autonomy and resilience.",
+                "description_context": "Freelancing taught me the full responsibility of delivery: clarify the need, make the trade-offs visible and leave behind software that can evolve.",
                 "content": [
                     {
-                        "title": "Freelance Start",
-                        "description": "Since June 2021, I have been working as a full-stack freelance developer, handling diverse projects."
+                        "title": "Independent delivery",
+                        "description": "Since 2021, I have delivered full-stack projects across web applications, automation and infrastructure, adapting quickly to different domains."
                     },
                     {
-                        "title": "Client-Facing Experience",
-                        "description": "I managed relationships, deadlines, and deliveries, ensuring quality while adapting to different industries."
+                        "title": "Working from the real problem",
+                        "description": "Client work strengthened my ability to ask precise questions, scope honestly and turn changing requirements into useful increments."
                     },
                     {
-                        "title": "SIRET Registered",
-                        "description": "I formalized my activity with SIRET 97797182900014, anchoring my freelance identity."
+                        "title": "Autonomy and accountability",
+                        "description": "Being responsible for the complete delivery made quality, communication and maintainability inseparable from the technical solution."
                     },
                     {
-                        "title": "Towards the Castle",
-                        "description": "Sailing across Old Ocean prepared me for the final landmark: Castle Cliff."
+                        "title": "A broader perspective",
+                        "description": "Freelance work remains a useful counterpoint to enterprise projects: it keeps the connection between engineering decisions and human outcomes close."
                     }
                 ],
                 "img_content": [],
@@ -310,23 +310,23 @@ export default defineEventHandler(async (event) => {
                 "type": "STORY",
                 "map": "UNDERWORLD",
                 "img_context": "https://www.hauts-de-seine.fr/fileadmin/_processed_/5/e/csm_2206WL036094_47b0ae5018.jpg",
-                "description_context": "Castle Cliff is the symbol of my achievements: combining experiences, studies, skills, and resilience into one strong foundation.",
+                "description_context": "The map ends here, but the work does not: I am building at the intersection of AI, Rust, SAP and thoughtful product engineering.",
                 "content": [
                     {
-                        "title": "Crowning Achievements",
-                        "description": "From Paladium to Modded, from VINCI to Freelance, I have built a diverse and solid portfolio."
+                        "title": "What I build",
+                        "description": "AI agents, RAG pipelines, cloud-native SAP services, high-performance Rust tooling and full-stack products that solve concrete problems."
                     },
                     {
-                        "title": "Skills and Knowledge",
-                        "description": "Mastery of modern frameworks, cloud systems, microservices, and real-time apps has become my fortress."
+                        "title": "How I work",
+                        "description": "I value clear boundaries, measurable performance, readable code and feedback from the people who use the system."
                     },
                     {
-                        "title": "Community and Growth",
-                        "description": "Active engagement, certifications, and continuous learning have been my allies in climbing this cliff."
+                        "title": "Open source and learning",
+                        "description": "Projects such as geniex-rs keep me close to systems programming and local AI while teaching me to document, maintain and share useful work."
                     },
                     {
-                        "title": "Looking Forward",
-                        "description": "Castle Cliff is not the end, but a vantage point for the adventures yet to come."
+                        "title": "What comes next",
+                        "description": "Continue making complex technology understandable, useful and dependable, whether it runs on a local NPU or inside a global enterprise platform."
                     }
                 ],
                 "img_content": [],
@@ -335,8 +335,8 @@ export default defineEventHandler(async (event) => {
                 ]
             }
         ]
-    } catch (err: any) {
-        console.error(err.message);
+    } catch (err: unknown) {
+        console.error(err instanceof Error ? err.message : err);
         throw createError({
             message: "Internal Error",
             statusCode: 500,

@@ -11,8 +11,8 @@ withDefaults(defineProps<Props>(), {
 <template>
   <div class="loader">
     <div class="loader-box">
-      <NuxtImg alt="img_loading" src="https://minecraft.wiki/images/thumb/Seravex_Fly_%28Dungeons%29.gif/200px-Seravex_Fly_%28Dungeons%29.gif?f6777"/>
-      <p>Chargement du monde...</p>
+      <img alt="Animation de chargement" src="/mobs/Enchanter.gif"/>
+      <p>Chargement de l'aventure...</p>
       <div v-if="percentage" class="loader-box-progress">
         <progress id="file" :value="percentage" max="100"/>
       </div>
@@ -45,9 +45,8 @@ withDefaults(defineProps<Props>(), {
     }
 
     img {
-      width: 80px;
+      width: 100px;
       margin-bottom: 2rem;
-      transform: scaleX(-1);
     }
 
     .loader-box-progress {
@@ -82,7 +81,6 @@ withDefaults(defineProps<Props>(), {
     }
 
     img {
-      width: 60px;
       margin-bottom: 1.5rem;
     }
 

@@ -9,18 +9,15 @@ const {me} = useMe();
     <div class="profil__container">
       <div class="profil__container-card">
         <div class="profil__container-card-content">
-          <NuxtImg alt="me" format="avif" src="https://cdn.maxgrz.fr/images/Maximilien-Grzeczka.avif"/>
+          <NuxtImg alt="Portrait of Maximilien Grzeczka" format="avif" height="144" width="144" src="/avatar.avif"/>
           <div>
             <h1>Maximilien Grzeczka</h1>
-            <p>With over 4 years of experience as a freelance developer, I specialize in designing and building robust web solutions with a focus on performance and scalability. Currently, I am
-              pursuing a Master Of Science at Epitech Paris (2025–2028) while working as a Full Stack Developer at Paladium Games.</p>
+            <p>AI Engineer and Full Stack Rust/SAP Developer based in Chantilly and Paris. I work on generative AI for ERP systems at VINCI Construction, architecting AI agents with SAP Joule, RAG pipelines with SAP AI Core and cloud-native services with CAP on HANA Cloud.</p>
           </div>
         </div>
         <div class="profil__container-card-about">
-          <h2>What am I like outside of work? I'm glad you asked.</h2>
-          <p>Upon having an idea, I am dedicated to bringing it to fruition regardless of the time required, evident in projects like this portfolio. Exploring solo gaming
-            experiences such as Minecraft or Subnautica is another passion of mine. Furthermore, I commit a substantial amount of time to expanding my knowledge base through
-            certifications from industry leaders like Microsoft and ScyllaDB.</p>
+          <h2>Building useful systems, from local AI to the cloud.</h2>
+          <p>I maintain open-source Rust tooling such as geniex-rs for Qualcomm GenieX and explore reliable, high-performance developer experiences across Rust, SAP and AI.</p>
         </div>
       </div>
     </div>
@@ -43,7 +40,7 @@ const {me} = useMe();
 }
 
 .profil__container {
-  background-image: url("/maps/old map.png");
+  background-image: url("/maps/old-map.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -184,9 +181,9 @@ const {me} = useMe();
     gap: 1rem;
     flex-direction: column;
 
-    max-width: 50vw;
-    max-height: 100vh;
-    overflow: hidden;
+    max-width: 90vw;
+    max-height: 100%;
+    overflow-y: auto;
   }
 
   .profil__container-card-content {
@@ -242,7 +239,7 @@ const {me} = useMe();
   .profil__container:before {
     content: "";
     position: absolute;
-    background-image: url("/maps/old map.png");
+    background-image: url("/maps/old-map.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

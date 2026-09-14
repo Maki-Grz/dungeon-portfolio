@@ -12,6 +12,11 @@
     --dungeon-kit-gray: #717171;
 }
 
+@font-face {
+    font-family: 'MinecraftTenVGORe';
+    src: url('/MinecraftTen-VGORe.ttf') format('truetype');
+    font-display: swap;
+}
 
 body {
     margin: 0;
@@ -19,6 +24,13 @@ body {
     font-family: 'MinecraftTenVGORe', sans-serif;
     background-color: var(--dungeon-kit-white);
     color: var(--dungeon-kit-black);
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 a {

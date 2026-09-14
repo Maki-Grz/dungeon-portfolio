@@ -6,7 +6,7 @@ const {switchMe} = useMe();
 
 <template>
   <div class="me" @click="switchMe()">
-    <img alt="icon" src="/minecraft-profil.png"/>
+    <NuxtImg alt="Open Maximilien Grzeczka profile" height="24" width="24" src="/minecraft-profil.png"/>
     <span>Maximilien Grzeczka</span>
   </div>
 </template>

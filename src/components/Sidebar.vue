@@ -9,7 +9,17 @@ watch(() => sidebar.value.title, (newTitle) => {
   mission.value = $experiences().find((e: any) => e.name === newTitle);
 }, {immediate: true});
 
-const missionIcon: string = mission.value ? `/markers/${mission.value.img}` : '/markers/donjon.png';
+const missionIcon = computed(() => mission.value ? `/markers/${mission.value.img}` : '/markers/donjon.png');
+
+function handleImageError(event: Event) {
+  const image = event.target as HTMLImageElement;
+
+  if (image.src.endsWith('/maps/map.jpg')) {
+    return;
+  }
+
+  image.src = '/maps/map.jpg';
+}
 
 const closeSidebar = () => {
   sidebar.value.showing = false;
@@ -21,16 +31,16 @@ const closeSidebar = () => {
     <div v-if="sidebar.showing && mission" class="sidebar">
       <div class="sidebar__header">
         <div class="sidebar__header-informations">
-          <img :src="missionIcon" alt="donjon"/>
-          <span>{{ mission.tag }}</span>
+          <img :src="missionIcon" :alt="`${mission.name} icon`"/>
+          <span>{{ mission.type }}</span>
           <h1>{{ mission.name }}</h1>
         </div>
         <button @click="closeSidebar">CLOSE</button>
       </div>
       <div class="sidebar__body">
         <div class="sidebar__body-synopsis">
-          <NuxtImg :src="mission.img_context" alt="img"/>
-          <p>{{ mission.description }}</p>
+          <img :src="mission.img_context" :alt="`${mission.name} illustration`" @error="handleImageError"/>
+          <p>{{ mission.description_context }}</p>
         </div>
         <div v-for="each in mission.content" :key="each.title" class="sidebar__body-content">
           <h2>{{ each.title }}</h2>
@@ -67,7 +77,7 @@ const closeSidebar = () => {
 }
 
 .sidebar {
-  background-image: url("/background sidebar.png");
+  background-image: url("/background-sidebar.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -240,6 +250,10 @@ const closeSidebar = () => {
     margin-bottom: 0.5rem;
   }
 
+  .sidebar__body-synopsis {
+    flex-direction: column;
+  }
+
   .sidebar__body-synopsis p,
   .sidebar__body-content p {
     font-size: 0.85rem;
@@ -268,6 +282,14 @@ const closeSidebar = () => {
 @media (max-width: 768px) {
   .sidebar {
     width: 100vw;
+  }
+
+  .sidebar__body {
+    padding-right: 0.5rem;
+  }
+
+  .sidebar__header-informations h1 {
+    font-size: 1.5rem;
   }
 }
 </style>

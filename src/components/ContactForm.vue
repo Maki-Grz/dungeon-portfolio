@@ -7,7 +7,7 @@ const {contact, switchContact} = useContact();
 <template>
   <div v-if="contact" class="contact-form-wrapper" @click.self="">
     <form class="contact-form" @submit="">
-      <NuxtImg alt="Contact guardian" format="gif" height="100" width="100" src="/mobs/KeyGolem_Diamond_Alert.gif"/>
+      <img alt="Contact guardian" height="100" width="100" src="/mobs/KeyGolem_Diamond_Alert.gif"/>
       <h1>Écrire à Maximilien</h1>
       <label>
         Nom

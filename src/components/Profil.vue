@@ -9,7 +9,7 @@ const {me} = useMe();
     <div class="profil__container">
       <div class="profil__container-card">
         <div class="profil__container-card-content">
-          <NuxtImg alt="Portrait of Maximilien Grzeczka" format="avif" height="144" width="144" src="/avatar.avif"/>
+          <img alt="Portrait of Maximilien Grzeczka" height="144" width="144" src="/avatar.avif"/>
           <div>
             <h1>Maximilien Grzeczka</h1>
             <p>AI Engineer and Full Stack Rust/SAP Developer based in Chantilly and Paris. I work on generative AI for ERP systems at VINCI Construction, architecting AI agents with SAP Joule, RAG pipelines with SAP AI Core and cloud-native services with CAP on HANA Cloud.</p>
